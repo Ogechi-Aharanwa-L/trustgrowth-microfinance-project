@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>TrustGrowth Microfinance</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font Awesome Icons -->
+  <link 
+    rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  >
+
+  <!-- Google Font for Business Name -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600;700&display=swap" 
+    rel="stylesheet"
+  >
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .brand-font {
+      font-family: 'Playfair Display', serif;
+    }
+  </style>
+
+  <style>
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 8rem;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+  }
+</style>
+
+</head>
+
+<body id="top" class="bg-gray-50"> 
+
+  <!-- Header / Navigation Bar -->
+<header class="sticky top-0 z-50 w-full bg-[#0B1F3A] shadow-lg">
+  <nav class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
+
+    <!-- Logo and Business Name -->
+    <a href="index.html" class="flex items-center gap-3">
+      <img 
+        src="../images/trustgrowthlogo2.png" 
+        alt="TrustGrowth Microfinance Logo"
+        class="h-12 w-12 rounded-full bg-white object-cover p-1"
+      />
+
+      <div>
+        <h1 class="brand-font text-xl font-bold text-white sm:text-2xl">
+          TrustGrowth
+        </h1>
+        <p class="text-xs font-medium tracking-wide text-emerald-300 sm:text-sm">
+          Microfinance
+        </p>
+      </div>
+    </a>
+
+    <!-- Desktop Menu -->
+    <ul class="hidden items-center gap-7 text-sm font-medium text-white md:flex lg:gap-9">
+
+      <!-- Home -->
+      <li>
+        <a href="../index.html" class="transition hover:text-emerald-300">
+          Home
+        </a>
+      </li>
+
+      <!-- About Dropdown -->
+      <li class="group relative">
+        <a href="./about.html" class="flex items-center gap-2 transition hover:text-emerald-300">
+          About
+          <i class="fa-solid fa-chevron-down text-xs"></i>
+        </a>
+
+        <div class="invisible absolute left-0 top-full w-52 rounded-xl bg-white p-3 text-[#0B1F3A] opacity-0 shadow-xl transition-all duration-200 group-hover:visible group-hover:opacity-100">
+          <a href="about.html" class="block rounded-lg px-4 py-2 hover:bg-emerald-50 hover:text-emerald-700">About Us</a>
+          <a href="about.html#mission" class="block rounded-lg px-4 py-2 hover:bg-emerald-50 hover:text-emerald-700">Mission & Vision</a>
+          <a href="about.html#mission" class="block rounded-lg px-4 py-2 hover:bg-emerald-50 hover:text-emerald-700">Core Values</a>
+        </div>
+      </li>
+
+      <!-- Services Dropdown -->
+      <li class="group relative">
+        <a href="./savings.html" class="flex items-center gap-2 transition hover:text-emerald-300">
+          Services
+          <i class="fa-solid fa-chevron-down text-xs"></i>
+        </a>
+
+        <div class="invisible absolute left-0 top-full w-56 rounded-xl bg-white p-3 text-[#0B1F3A] opacity-0 shadow-xl transition-all duration-200 group-hover:visible group-hover:opacity-100">
+          <a href="services.html" class="block rounded-lg px-4 py-2 hover:bg-emerald-50 hover:text-emerald-700">All Services</a>
+          <a href="services.html#advisory" class="block rounded-lg px-4 py-2 hover:bg-emerald-50 hover:text-emerald-700">Financial Advisory</a>
+          <a href="services.html#sme-support" class="block rounded-lg px-4 py-2 hover:bg-emerald-50 hover:text-emerald-700">SME Support</a>
+          <a href="services.html#group-lending" class="block rounded-lg px-4 py-2 hover:bg-emerald-50 hover:text-emerald-700">Loans</a>
+        </div>
+      </li>
+
+      <!-- Loans Dropdown -->
+      <li class="group relative">
+        <a href="./loans.html" class="flex items-center gap-2 transition hover:text-emerald-300">
+          Loans
+          <i class="fa-solid fa-chevron-down text-xs"></i>
+        </a>
+
+        <div class="invisible absolute left-0 top-full w-56 rounded-xl bg-white p-3 text-[#0B1F3A] opacity-0 shadow-xl transition-all duration-200 group-hover:visible group-hover:opacity-100">
+          <a href="loans.html" class="block rounded-lg px-4 py-2 hover:bg-emerald-50 hover:text-emerald-700">Loan Products</a>
+          <a href="loans.html#apply" class="block rounded-lg px-4 py-2 hover:bg-emerald-50 hover:text-emerald-700">Apply for a Loan</a>
+          <a href="loans.html#requirements" class="block rounded-lg px-4 py-2 hover:bg-emerald-50 hover:text-emerald-700">Requirements</a>
+          <a href="loans.html#repayment" class="block rounded-lg px-4 py-2 hover:bg-emerald-50 hover:text-emerald-700">Repayment Plan</a>
+        </div>
+      </li>
+
+      <!-- Savings Dropdown -->
+      <li class="group relative">
+        <a href="./savings.html" class="flex items-center gap-2 transition hover:text-emerald-300">
+          Savings
+          <i class="fa-solid fa-chevron-down text-xs"></i>
+        </a>
+
+        <div class="invisible absolute left-0 top-full w-56 rounded-xl bg-white p-3 text-[#0B1F3A] opacity-0 shadow-xl transition-all duration-200 group-hover:visible group-hover:opacity-100">
+          <a href="savings.html" class="block rounded-lg px-4 py-2 hover:bg-emerald-50 hover:text-emerald-700">Savings Plans</a>
+          <a href="savings.html#regular" class="block rounded-lg px-4 py-2 hover:bg-emerald-50 hover:text-emerald-700">Regular Savings</a>
+          <a href="savings.html#target" class="block rounded-lg px-4 py-2 hover:bg-emerald-50 hover:text-emerald-700">Target Savings</a>
+          <a href="savings.html#business" class="block rounded-lg px-4 py-2 hover:bg-emerald-50 hover:text-emerald-700">Business Savings</a>
+        </div>
+      </li>
+
+      <!-- Contact Dropdown -->
+      <li class="group relative">
+        <a href="./contact.html" class="flex items-center gap-2 transition hover:text-emerald-300">
+          Contact
+          <i class="fa-solid fa-chevron-down text-xs"></i>
+        </a>
+
+        <div class="invisible absolute left-0 top-full w-52 rounded-xl bg-white p-3 text-[#0B1F3A] opacity-0 shadow-xl transition-all duration-200 group-hover:visible group-hover:opacity-100">
+          <a href="contact.html" class="block rounded-lg px-4 py-2 hover:bg-emerald-50 hover:text-emerald-700">Contact Us</a>
+          <a href="contact.html#location" class="block rounded-lg px-4 py-2 hover:bg-emerald-50 hover:text-emerald-700">Branch Location</a>
+          <a href="faqs.html" class="block rounded-lg px-4 py-2 hover:bg-emerald-50 hover:text-emerald-700">FAQs</a>
+        </div>
+      </li>
+    </ul>
+
+    <!-- Right Side -->
+    <div class="flex items-center gap-4">
+
+      <!-- Search Button -->
+      <button 
+        class="hidden h-10 w-10 items-center justify-center rounded-full bg-white text-[#0B1F3A] transition hover:bg-emerald-500 hover:text-white sm:flex"
+        aria-label="Search"
+      >
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+
+      <!-- Mobile Menu -->
+      <details class="relative md:hidden">
+        <summary class="flex h-10 w-10 cursor-pointer list-none items-center justify-center rounded-md border border-white/30 text-white">
+          <i class="fa-solid fa-bars text-xl"></i>
+        </summary>
+
+        <div class="absolute right-0 top-14 w-72 rounded-2xl bg-white p-4 text-[#0B1F3A] shadow-2xl">
+
+          <a href="index.html" class="block rounded-lg px-4 py-3 font-semibold hover:bg-emerald-50">Home</a>
+
+          <details class="rounded-lg px-4 py-3 hover:bg-emerald-50">
+            <summary class="cursor-pointer font-semibold">About</summary>
+            <div class="mt-3 space-y-2 pl-3 text-sm">
+              <a href="about.html" class="block">About Us</a>
+              <a href="about.html#mission" class="block">Mission & Vision</a>
+              <a href="about.html#values" class="block">Core Values</a>
+            </div>
+          </details>
+
+          <details class="rounded-lg px-4 py-3 hover:bg-emerald-50">
+            <summary class="cursor-pointer font-semibold">Services</summary>
+            <div class="mt-3 space-y-2 pl-3 text-sm">
+              <a href="services.html" class="block">All Services</a>
+              <a href="services.html#advisory" class="block">Financial Advisory</a>
+              <a href="services.html#sme-support" class="block">SME Support</a>
+              <a href="services.html#group-lending" class="block">Group Lending</a>
+            </div>
+          </details>
+
+          <details class="rounded-lg px-4 py-3 hover:bg-emerald-50">
+            <summary class="cursor-pointer font-semibold">Loans</summary>
+            <div class="mt-3 space-y-2 pl-3 text-sm">
+              <a href="loans.html" class="block">Loan Products</a>
+              <a href="loans.html#apply" class="block">Apply for a Loan</a>
+              <a href="loans.html#requirements" class="block">Requirements</a>
+              <a href="loans.html#repayment" class="block">Repayment Plan</a>
+            </div>
+          </details>
+
+          <details class="rounded-lg px-4 py-3 hover:bg-emerald-50">
+            <summary class="cursor-pointer font-semibold">Savings</summary>
+            <div class="mt-3 space-y-2 pl-3 text-sm">
+              <a href="savings.html" class="block">Savings Plans</a>
+              <a href="savings.html#regular" class="block">Regular Savings</a>
+              <a href="savings.html#target" class="block">Target Savings</a>
+              <a href="savings.html#business" class="block">Business Savings</a>
+            </div>
+          </details>
+
+          <a href="./contact.html" class="block rounded-lg px-4 py-3 font-semibold hover:bg-emerald-50">Contact</a>
+          <a href="./contact.html#faqs" class="block rounded-lg px-4 py-3 font-semibold hover:bg-emerald-50">FAQs</a>
+
+          <button class="mt-4 flex w-full items-center justify-center gap-2 rounded-lg bg-emerald-600 px-4 py-3 font-semibold text-white hover:bg-emerald-700">
+            Search
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+
+        </div>
+      </details>
+    </div>
+
+  </nav>
+</header>
+<!-- About Page Hero -->
+<section class="relative overflow-hidden bg-[#0B1F3A]">
+  <div class="absolute inset-0">
+    <img 
+      src="../images/trustgrowthaboutpage1.png" 
+      alt="TrustGrowth staff welcoming happy customers"
+      class="h-full w-full object-cover object-center lg:object-[center_45%]"
+    />
+
+    <!-- Dark overlay -->
+    <div class="absolute inset-0 bg-[#0B1F3A]/65"></div>
+  </div>
+
+  <div class="relative mx-auto flex min-h-[360px] max-w-7xl flex-col items-center justify-center px-4 py-20 text-center sm:min-h-[400px] sm:px-6 lg:min-h-[460px] lg:px-8 xl:min-h-[500px]">
+    
+    <p class="mb-4 inline-flex rounded-full bg-white/15 px-5 py-2 text-sm font-semibold text-emerald-300 backdrop-blur-sm">
+      About TrustGrowth
+    </p>
+
+    <h1 class="brand-font text-4xl font-bold text-white sm:text-5xl lg:text-6xl">
+      About Us
+    </h1>
+
+    <p class="mt-4 text-sm font-medium text-gray-200 sm:text-base">
+      <a href="index.html" class="transition hover:text-emerald-300">Home</a>
+      <span class="mx-2">/</span>
+      <span>About Us</span>
+    </p>
+
+  </div>
+</section>
+
+<!-- Who We Are Section -->
+<section class="bg-white py-16 sm:py-20">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+
+    <!-- MOBILE / TABLET LAYOUT -->
+    <div class="lg:hidden">
+      <div class="rounded-[2rem] bg-[#F8FCFA] p-6 sm:p-8">
+
+        <p class="inline-flex w-fit rounded-full bg-emerald-100 px-4 py-2 text-sm font-semibold text-emerald-700">
+          Who We Are
+        </p>
+
+        <h2 class="brand-font mt-5 text-3xl font-bold leading-tight text-[#0B1F3A] sm:text-4xl">
+          Building Financial Confidence for Everyday People
+        </h2>
+
+        <p class="mt-6 text-base leading-8 text-gray-600">
+          TrustGrowth Microfinance is built to support individuals, traders, families, salary earners, and small businesses with accessible financial solutions. We believe financial services should be clear, human, and designed around real life needs.
+        </p>
+
+        <!-- Tablet Image -->
+        <div class="relative my-8 overflow-hidden rounded-[2rem] shadow-xl">
+          <img 
+            src="../images/trustgrowthaboutpage.png" 
+            alt="TrustGrowth staff helping a customer with paper documents"
+            class="h-[330px] w-full object-contain object-center sm:h-[420px] md:h-[460px]"
+          />
+
+          <div class="absolute bottom-5 left-5 right-5 max-w-sm rounded-2xl bg-white/90 p-5 shadow-xl sm:right-auto">
+            <div class="mb-3 flex h-11 w-11 items-center justify-center rounded-xl bg-emerald-100 text-emerald-700">
+              <i class="fa-solid fa-file-signature"></i>
+            </div>
+
+            <h3 class="font-bold text-[#0B1F3A]">
+              Simple Documentation
+            </h3>
+
+            <p class="mt-2 text-sm leading-6 text-gray-600">
+              Clear guidance through every step of your loan and savings journey.
+            </p>
+          </div>
+        </div>
+
+        <p class="text-base leading-8 text-gray-600">
+          Our goal is to make loans, savings, and financial guidance easier to understand and easier to access, especially for people working hard to grow their income and improve their future.
+        </p>
+
+        <div class="mt-8 grid gap-5 sm:grid-cols-2">
+          <div class="flex items-start gap-3">
+            <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#F1ECFF] text-[#5B4B8A]">
+              <i class="fa-solid fa-handshake-angle"></i>
+            </div>
+
+            <div>
+              <h3 class="font-bold text-[#0B1F3A]">Human Support</h3>
+              <p class="mt-1 text-sm leading-6 text-gray-600">
+                Friendly guidance from real advisors.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-3">
+            <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-emerald-100 text-emerald-700">
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+
+            <div>
+              <h3 class="font-bold text-[#0B1F3A]">Trusted Service</h3>
+              <p class="mt-1 text-sm leading-6 text-gray-600">
+                Clear terms and reliable support.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <a 
+          href="services.html"
+          class="mt-8 inline-flex w-full items-center justify-center gap-3 rounded-full bg-[#0B1F3A] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#12315B]"
+        >
+          Explore Our Services
+          <i class="fa-solid fa-arrow-right text-xs"></i>
+        </a>
+      </div>
+    </div>
+
+
+    <!-- LAPTOP / DESKTOP LAYOUT -->
+    <div class="hidden lg:grid lg:grid-cols-2 lg:items-stretch lg:gap-10">
+
+      <!-- Image Side -->
+      <div class="relative h-full">
+        <div class="h-full overflow-hidden rounded-[2rem] shadow-xl">
+          <img 
+            src="../images/trustgrowthaboutpage.png" 
+            alt="TrustGrowth staff helping a customer with paper documents"
+            class="h-full min-h-[560px] w-full object-cover object-center"
+          />
+        </div>
+
+        <div class="absolute bottom-6 left-6 max-w-sm rounded-2xl bg-white/90 p-5 shadow-xl">
+          <div class="mb-3 flex h-11 w-11 items-center justify-center rounded-xl bg-emerald-100 text-emerald-700">
+            <i class="fa-solid fa-file-signature"></i>
+          </div>
+
+          <h3 class="font-bold text-[#0B1F3A]">
+            Simple Documentation
+          </h3>
+
+          <p class="mt-2 text-sm leading-6 text-gray-600">
+            Clear guidance through every step of your loan and savings journey.
+          </p>
+        </div>
+      </div>
+
+      <!-- Text Side -->
+      <div class="flex h-full flex-col justify-center rounded-[2rem] bg-[#F8FCFA] p-10">
+        <p class="inline-flex w-fit rounded-full bg-emerald-100 px-4 py-2 text-sm font-semibold text-emerald-700">
+          Who We Are
+        </p>
+
+        <h2 class="brand-font mt-5 max-w-xl text-5xl font-bold leading-tight text-[#0B1F3A]">
+          Building Financial Confidence for Everyday People
+        </h2>
+
+        <p class="mt-6 text-base leading-8 text-gray-600">
+          TrustGrowth Microfinance is built to support individuals, traders, families, salary earners, and small businesses with accessible financial solutions. We believe financial services should be clear, human, and designed around real life needs.
+        </p>
+
+        <p class="mt-4 text-base leading-8 text-gray-600">
+          Our goal is to make loans, savings, and financial guidance easier to understand and easier to access, especially for people working hard to grow their income and improve their future.
+        </p>
+
+        <div class="mt-8 grid gap-5 sm:grid-cols-2">
+          <div class="flex items-start gap-3">
+            <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-[#F1ECFF] text-[#5B4B8A]">
+              <i class="fa-solid fa-handshake-angle"></i>
+            </div>
+
+            <div>
+              <h3 class="font-bold text-[#0B1F3A]">Human Support</h3>
+              <p class="mt-1 text-sm leading-6 text-gray-600">
+                Friendly guidance from real advisors.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-3">
+            <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-emerald-100 text-emerald-700">
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+
+            <div>
+              <h3 class="font-bold text-[#0B1F3A]">Trusted Service</h3>
+              <p class="mt-1 text-sm leading-6 text-gray-600">
+                Clear terms and reliable support.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <a 
+          href="services.html"
+          class="mt-8 inline-flex w-fit items-center justify-center gap-3 rounded-full bg-[#0B1F3A] px-6 py-3 text-sm font-semibold text-white transition hover:bg-[#12315B]"
+        >
+          Explore Our Services
+          <i class="fa-solid fa-arrow-right text-xs"></i>
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- Mission Vision Values Section -->
+<section id="mission" class="bg-white py-16 sm:py-20">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+
+    <!-- Text Content First -->
+    <div class="mx-auto max-w-4xl text-center">
+      <p class="inline-flex rounded-full bg-[#F1ECFF] px-4 py-2 text-sm font-semibold text-[#5B4B8A]">
+        Mission, Vision & Values
+      </p>
+
+      <h2 class="brand-font mt-5 text-3xl font-bold leading-tight text-[#0B1F3A] sm:text-4xl lg:text-5xl">
+        Your Growth Is Our Priority
+      </h2>
+
+      <p class="mx-auto mt-5 max-w-3xl text-base leading-8 text-gray-600">
+        TrustGrowth Microfinance is guided by a simple belief: financial support should be clear, accessible, and designed to help people move forward with confidence.
+      </p>
+    </div>
+
+    <!-- Mission, Vision, Values Blocks -->
+    <div class="mx-auto mt-10 grid max-w-6xl gap-6 md:grid-cols-3">
+
+      <!-- Mission -->
+      <article class="rounded-[2rem] bg-[#EAF8F2] p-6 shadow-sm">
+        <div class="mb-5 flex h-12 w-12 items-center justify-center rounded-2xl bg-emerald-600 text-white">
+          01
+        </div>
+
+        <h3 class="text-xl font-bold text-[#0B1F3A]">
+          Our Mission
+        </h3>
+
+        <p class="mt-3 text-sm leading-7 text-gray-600">
+          To provide simple, accessible, and reliable financial services that help people and small businesses grow with confidence.
+        </p>
+      </article>
+
+      <!-- Vision -->
+      <article class="rounded-[2rem] bg-[#F1ECFF] p-6 shadow-sm">
+        <div class="mb-5 flex h-12 w-12 items-center justify-center rounded-2xl bg-[#5B4B8A] text-white">
+          02
+        </div>
+
+        <h3 class="text-xl font-bold text-[#0B1F3A]">
+          Our Vision
+        </h3>
+
+        <p class="mt-3 text-sm leading-7 text-gray-600">
+          To become a trusted microfinance partner known for empowering customers, supporting businesses, and strengthening communities.
+        </p>
+      </article>
+
+      <!-- Values -->
+      <article class="rounded-[2rem] bg-[#F8F9FC] p-6 shadow-sm">
+        <div class="mb-5 flex h-12 w-12 items-center justify-center rounded-2xl bg-[#0B1F3A] text-white">
+          03
+        </div>
+
+        <h3 class="text-xl font-bold text-[#0B1F3A]">
+          Our Values
+        </h3>
+
+        <p class="mt-3 text-sm leading-7 text-gray-600">
+          Trust, transparency, respect, customer care, and practical support guide how we serve every customer.
+        </p>
+      </article>
+
+    </div>
+
+    <!-- Collage Image Below -->
+    <div class="mx-auto mt-12 max-w-6xl overflow-hidden rounded-[2rem] shadow-xl">
+      <img 
+        src="../images/trustgrowthaboutpage3.png" 
+        alt="Different TrustGrowth customer support moments"
+        class="h-[360px] w-full object-cover object-center sm:h-[460px] md:h-[900px]"
+      />
+    </div>
+
+  </div>
+</section>
+
+<!-- About CTA Section -->
+<section class="relative overflow-hidden bg-gradient-to-br from-emerald-700 via-emerald-600 to-emerald-900 py-16 text-white">
+  <!-- Soft decorative glow -->
+  <div class="absolute left-0 top-0 h-72 w-72 rounded-full bg-white/10 blur-3xl"></div>
+  <div class="absolute bottom-0 right-0 h-80 w-80 rounded-full bg-[#0B1F3A]/30 blur-3xl"></div>
+
+  <!-- Subtle pattern overlay -->
+  <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(255,255,255,0.18),_transparent_30%),radial-gradient(circle_at_bottom_right,_rgba(11,31,58,0.35),_transparent_35%)]"></div>
+
+  <div class="relative mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">
+    <p class="inline-flex rounded-full bg-white/15 px-4 py-2 text-sm font-semibold text-emerald-50 ring-1 ring-white/20">
+      Let’s Grow Together
+    </p>
+
+    <h2 class="brand-font mt-5 text-3xl font-bold leading-tight sm:text-4xl lg:text-5xl">
+      Your Partner in Financial Growth
+    </h2>
+
+    <p class="mx-auto mt-5 max-w-2xl text-base leading-8 text-emerald-50">
+      Whether you want to grow your business, save better, or access flexible financial support, TrustGrowth is here to guide you.
+    </p>
+
+    <div class="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
+      <a 
+        href="loans.html#apply"
+        class="inline-flex items-center justify-center gap-3 rounded-full bg-white px-7 py-4 text-sm font-semibold text-emerald-700 shadow-lg transition hover:bg-[#0B1F3A] hover:text-white"
+      >
+        Apply for a Loan
+        <i class="fa-solid fa-arrow-right text-xs"></i>
+      </a>
+
+      <a 
+        href="contact.html"
+        class="inline-flex items-center justify-center gap-3 rounded-full border border-white/60 px-7 py-4 text-sm font-semibold text-white transition hover:bg-white hover:text-emerald-700"
+      >
+        Contact Us
+        <i class="fa-solid fa-phone text-xs"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- Footer Section -->
+<footer class="bg-[#0B1F3A] text-white">
+  <div class="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+
+    <!-- Footer Top -->
+    <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
+
+      <!-- Brand Area -->
+      <div>
+        <a href="index.html" class="flex items-center gap-3">
+          <img 
+            src="../images/trustgrowthlogo2.png" 
+            alt="TrustGrowth Microfinance Logo"
+            class="h-12 w-12 rounded-full bg-white object-cover p-1"
+          />
+
+          <div>
+            <h2 class="brand-font text-2xl font-bold text-white">
+              TrustGrowth
+            </h2>
+            <p class="text-sm font-medium tracking-wide text-emerald-300">
+              Microfinance
+            </p>
+          </div>
+        </a>
+
+        <p class="mt-5 max-w-sm text-sm leading-7 text-gray-300">
+          Helping individuals, traders, families, and small businesses access simple loans, secure savings, and practical financial support.
+        </p>
+
+        <!-- Social Icons -->
+        <div class="mt-6 flex items-center gap-3">
+          <a 
+            href="#" 
+            aria-label="Facebook"
+            class="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white transition hover:bg-emerald-500"
+          >
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+
+          <a 
+            href="#" 
+            aria-label="Instagram"
+            class="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white transition hover:bg-emerald-500"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+
+          <a 
+            href="#" 
+            aria-label="LinkedIn"
+            class="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white transition hover:bg-emerald-500"
+          >
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+
+          <a 
+            href="#" 
+            aria-label="WhatsApp"
+            class="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white transition hover:bg-emerald-500"
+          >
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+
+          <a 
+            href="#" 
+            aria-label="X Twitter"
+            class="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white transition hover:bg-emerald-500"
+          >
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div>
+        <h3 class="text-lg font-bold text-white">
+          Quick Links
+        </h3>
+
+        <ul class="mt-5 space-y-3 text-sm text-gray-300">
+          <li>
+            <a href="index.html" class="transition hover:text-emerald-300">
+              Home
+            </a>
+          </li>
+
+          <li>
+            <a href="about.html" class="transition hover:text-emerald-300">
+              About Us
+            </a>
+          </li>
+
+          <li>
+            <a href="services.html" class="transition hover:text-emerald-300">
+              Services
+            </a>
+          </li>
+
+          <li>
+            <a href="loans.html" class="transition hover:text-emerald-300">
+              Loans
+            </a>
+          </li>
+
+          <li>
+            <a href="savings.html" class="transition hover:text-emerald-300">
+              Savings
+            </a>
+          </li>
+
+          <li>
+            <a href="faqs.html" class="transition hover:text-emerald-300">
+              FAQs
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Services -->
+      <div>
+        <h3 class="text-lg font-bold text-white">
+          Our Services
+        </h3>
+
+        <ul class="mt-5 space-y-3 text-sm text-gray-300">
+          <li>
+            <a href="loans.html#personal-loans" class="transition hover:text-emerald-300">
+              Personal Loans
+            </a>
+          </li>
+
+          <li>
+            <a href="loans.html#business-loans" class="transition hover:text-emerald-300">
+              Business Loans
+            </a>
+          </li>
+
+          <li>
+            <a href="savings.html#regular" class="transition hover:text-emerald-300">
+              Regular Savings
+            </a>
+          </li>
+
+          <li>
+            <a href="savings.html#business" class="transition hover:text-emerald-300">
+              Business Savings
+            </a>
+          </li>
+
+          <li>
+            <a href="services.html#advisory" class="transition hover:text-emerald-300">
+              Financial Advisory
+            </a>
+          </li>
+
+          <li>
+            <a href="services.html#sme-support" class="transition hover:text-emerald-300">
+              SME Support
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div>
+        <h3 class="text-lg font-bold text-white">
+          Contact Us
+        </h3>
+
+        <ul class="mt-5 space-y-4 text-sm text-gray-300">
+
+          <li class="flex items-start gap-3">
+            <span class="mt-1 text-emerald-300">
+              <i class="fa-solid fa-location-dot"></i>
+            </span>
+            <span>
+              25 Growth Avenue, Victoria Island, Lagos, Nigeria
+            </span>
+          </li>
+
+          <li class="flex items-start gap-3">
+            <span class="mt-1 text-emerald-300">
+              <i class="fa-solid fa-phone"></i>
+            </span>
+            <a href="tel:+2348000000000" class="transition hover:text-emerald-300">
+              +234 800 000 0000
+            </a>
+          </li>
+
+          <li class="flex items-start gap-3">
+            <span class="mt-1 text-emerald-300">
+              <i class="fa-solid fa-envelope"></i>
+            </span>
+            <a href="mailto:info@trustgrowthmfb.com" class="transition hover:text-emerald-300">
+              info@trustgrowthmfb.com
+            </a>
+          </li>
+
+          <li class="flex items-start gap-3">
+            <span class="mt-1 text-emerald-300">
+              <i class="fa-solid fa-clock"></i>
+            </span>
+            <span>
+              Mon to Fri: 8:00am to 5:00pm
+            </span>
+          </li>
+
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="mt-10 border-t border-white/10 pt-6">
+      <div class="flex flex-col items-center justify-between gap-5 md:flex-row">
+
+        <p class="text-center text-sm text-gray-400 md:text-left">
+          © 2026 TrustGrowth Microfinance. All rights reserved.
+        </p>
+
+        <div class="flex flex-wrap items-center justify-center gap-5 text-sm text-gray-400">
+          <a href="#" class="transition hover:text-emerald-300">
+            Privacy Policy
+          </a>
+
+          <a href="#" class="transition hover:text-emerald-300">
+            Terms of Use
+          </a>
+
+          <a 
+            href="#top"
+            class="inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-2 text-white transition hover:bg-emerald-500"
+          >
+            Back to Top
+            <i class="fa-solid fa-arrow-up text-xs"></i>
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</footer>
+</body>
+</html>

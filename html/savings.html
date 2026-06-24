@@ -1,0 +1,1284 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>TrustGrowth Microfinance</title>
+
+  <!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font Awesome Icons -->
+<link 
+    rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+>
+
+  <!-- Google Font for Business Name -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link 
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600;700&display=swap" 
+    rel="stylesheet"
+>
+
+ <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .brand-font {
+      font-family: 'Playfair Display', serif;
+    }
+  </style>
+
+  <style>
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 8rem;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+  }
+</style>
+</head>
+
+
+
+  <!-- Header / Navigation Bar -->
+<header class="sticky top-0 z-50 w-full bg-[#0B1F3A] shadow-lg">
+  <nav class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
+
+    <!-- Logo and Business Name -->
+    <a href="index.html" class="flex items-center gap-3">
+      <img 
+        src="../images/trustgrowthlogo2.png" 
+        alt="TrustGrowth Microfinance Logo"
+        class="h-12 w-12 rounded-full bg-white object-cover p-1"
+      />
+
+      <div>
+        <h1 class="brand-font text-xl font-bold text-white sm:text-2xl">
+          TrustGrowth
+        </h1>
+        <p class="text-xs font-medium tracking-wide text-emerald-300 sm:text-sm">
+          Microfinance
+        </p>
+      </div>
+    </a>
+
+    <!-- Desktop Menu -->
+    <ul class="hidden items-center gap-7 text-sm font-medium text-white md:flex lg:gap-9">
+
+      <!-- Home -->
+      <li>
+        <a href="../index.html" class="transition hover:text-emerald-300">
+          Home
+        </a>
+      </li>
+
+      <!-- About Dropdown -->
+      <li class="group relative">
+        <a href="./about.html" class="flex items-center gap-2 transition hover:text-emerald-300">
+          About
+          <i class="fa-solid fa-chevron-down text-xs"></i>
+        </a>
+
+        <div class="invisible absolute left-0 top-full w-52 rounded-xl bg-white p-3 text-[#0B1F3A] opacity-0 shadow-xl transition-all duration-200 group-hover:visible group-hover:opacity-100">
+          <a href="about.html" class="block rounded-lg px-4 py-2 hover:bg-emerald-50 hover:text-emerald-700">About Us</a>
+          <a href="about.html#mission" class="block rounded-lg px-4 py-2 hover:bg-emerald-50 hover:text-emerald-700">Mission & Vision</a>
+          <a href="about.html#values" class="block rounded-lg px-4 py-2 hover:bg-emerald-50 hover:text-emerald-700">Core Values</a>
+        </div>
+      </li>
+
+      <!-- Services Dropdown -->
+      <li class="group relative">
+        <a href="./services.html" class="flex items-center gap-2 transition hover:text-emerald-300">
+          Services
+          <i class="fa-solid fa-chevron-down text-xs"></i>
+        </a>
+
+        <div class="invisible absolute left-0 top-full w-56 rounded-xl bg-white p-3 text-[#0B1F3A] opacity-0 shadow-xl transition-all duration-200 group-hover:visible group-hover:opacity-100">
+          <a href="services.html" class="block rounded-lg px-4 py-2 hover:bg-emerald-50 hover:text-emerald-700">All Services</a>
+          <a href="services.html#advisory" class="block rounded-lg px-4 py-2 hover:bg-emerald-50 hover:text-emerald-700">Financial Advisory</a>
+          <a href="services.html#sme-support" class="block rounded-lg px-4 py-2 hover:bg-emerald-50 hover:text-emerald-700">SME Support</a>
+          <a href="services.html#group-lending" class="block rounded-lg px-4 py-2 hover:bg-emerald-50 hover:text-emerald-700">Group Lending</a>
+        </div>
+      </li>
+
+      <!-- Loans Dropdown -->
+      <li class="group relative">
+        <a href="./loans.html" class="flex items-center gap-2 transition hover:text-emerald-300">
+          Loans
+          <i class="fa-solid fa-chevron-down text-xs"></i>
+        </a>
+
+        <div class="invisible absolute left-0 top-full w-56 rounded-xl bg-white p-3 text-[#0B1F3A] opacity-0 shadow-xl transition-all duration-200 group-hover:visible group-hover:opacity-100">
+          <a href="loans.html" class="block rounded-lg px-4 py-2 hover:bg-emerald-50 hover:text-emerald-700">Loan Products</a>
+          <a href="loans.html#apply" class="block rounded-lg px-4 py-2 hover:bg-emerald-50 hover:text-emerald-700">Apply for a Loan</a>
+          <a href="loans.html#requirements" class="block rounded-lg px-4 py-2 hover:bg-emerald-50 hover:text-emerald-700">Requirements</a>
+          <a href="loans.html#repayment" class="block rounded-lg px-4 py-2 hover:bg-emerald-50 hover:text-emerald-700">Repayment Plan</a>
+        </div>
+      </li>
+
+      <!-- Savings Dropdown -->
+      <li class="group relative">
+        <a href="./savings.html" class="flex items-center gap-2 transition hover:text-emerald-300">
+          Savings
+          <i class="fa-solid fa-chevron-down text-xs"></i>
+        </a>
+
+        <div class="invisible absolute left-0 top-full w-56 rounded-xl bg-white p-3 text-[#0B1F3A] opacity-0 shadow-xl transition-all duration-200 group-hover:visible group-hover:opacity-100">
+          <a href="savings.html#goal-journey" class="block rounded-lg px-4 py-2 hover:bg-emerald-50 hover:text-emerald-700">Savings Plans</a>
+          <a href="savings.html#regular-savings" class="block rounded-lg px-4 py-2 hover:bg-emerald-50 hover:text-emerald-700">Regular Savings</a>
+          <a href="savings.html#target-savings" class="block rounded-lg px-4 py-2 hover:bg-emerald-50 hover:text-emerald-700">Target Savings</a>
+          <a href="savings.html#business-savings" class="block rounded-lg px-4 py-2 hover:bg-emerald-50 hover:text-emerald-700">Business Savings</a>
+        </div>
+      </li>
+
+      <!-- Contact Dropdown -->
+      <li class="group relative">
+        <a href="./contact.html" class="flex items-center gap-2 transition hover:text-emerald-300">
+          Contact
+          <i class="fa-solid fa-chevron-down text-xs"></i>
+        </a>
+
+        <div class="invisible absolute left-0 top-full w-52 rounded-xl bg-white p-3 text-[#0B1F3A] opacity-0 shadow-xl transition-all duration-200 group-hover:visible group-hover:opacity-100">
+          <a href="contact.html" class="block rounded-lg px-4 py-2 hover:bg-emerald-50 hover:text-emerald-700">Contact Us</a>
+          <a href="contact.html#location" class="block rounded-lg px-4 py-2 hover:bg-emerald-50 hover:text-emerald-700">Branch Location</a>
+          <a href="faqs.html" class="block rounded-lg px-4 py-2 hover:bg-emerald-50 hover:text-emerald-700">FAQs</a>
+        </div>
+      </li>
+    </ul>
+
+    <!-- Right Side -->
+    <div class="flex items-center gap-4">
+
+      <!-- Search Button -->
+      <button 
+        class="hidden h-10 w-10 items-center justify-center rounded-full bg-white text-[#0B1F3A] transition hover:bg-emerald-500 hover:text-white sm:flex"
+        aria-label="Search"
+      >
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+
+      <!-- Mobile Menu -->
+      <details class="relative md:hidden">
+        <summary class="flex h-10 w-10 cursor-pointer list-none items-center justify-center rounded-md border border-white/30 text-white">
+          <i class="fa-solid fa-bars text-xl"></i>
+        </summary>
+
+        <div class="absolute right-0 top-14 w-72 rounded-2xl bg-white p-4 text-[#0B1F3A] shadow-2xl">
+
+          <a href="../index.html" class="block rounded-lg px-4 py-3 font-semibold hover:bg-emerald-50">Home</a>
+
+          <details class="rounded-lg px-4 py-3 hover:bg-emerald-50">
+            <summary class="cursor-pointer font-semibold">About</summary>
+            <div class="mt-3 space-y-2 pl-3 text-sm">
+              <a href="about.html" class="block">About Us</a>
+              <a href="about.html#mission" class="block">Mission & Vision</a>
+              <a href="about.html#values" class="block">Core Values</a>
+            </div>
+          </details>
+
+          <details class="rounded-lg px-4 py-3 hover:bg-emerald-50">
+            <summary class="cursor-pointer font-semibold">Services</summary>
+            <div class="mt-3 space-y-2 pl-3 text-sm">
+              <a href="services.html" class="block">All Services</a>
+              <a href="services.html#advisory" class="block">Financial Advisory</a>
+              <a href="services.html#sme-support" class="block">SME Support</a>
+              <a href="services.html#loans" class="block">Loans</a>
+            </div>
+          </details>
+
+          <details class="rounded-lg px-4 py-3 hover:bg-emerald-50">
+            <summary class="cursor-pointer font-semibold">Loans</summary>
+            <div class="mt-3 space-y-2 pl-3 text-sm">
+              <a href="loans.html" class="block">Loan Products</a>
+              <a href="loans.html#apply" class="block">Apply for a Loan</a>
+              <a href="loans.html#requirements" class="block">Requirements</a>
+              <a href="loans.html#repayment-plan" class="block">Repayment Plan</a>
+            </div>
+          </details>
+
+          <details class="rounded-lg px-4 py-3 hover:bg-emerald-50">
+            <summary class="cursor-pointer font-semibold">Savings</summary>
+            <div class="mt-3 space-y-2 pl-3 text-sm">
+              <a href="savings.html" class="block">Savings Plans</a>
+              <a href="savings.html#regular" class="block">Regular Savings</a>
+              <a href="savings.html#target" class="block">Target Savings</a>
+              <a href="savings.html#business" class="block">Business Savings</a>
+            </div>
+          </details>
+
+          <a href="./contact.html" class="block rounded-lg px-4 py-3 font-semibold hover:bg-emerald-50">Contact</a>
+          <a href="./contact.html#faqs" class="block rounded-lg px-4 py-3 font-semibold hover:bg-emerald-50">FAQs</a>
+
+          <button class="mt-4 flex w-full items-center justify-center gap-2 rounded-lg bg-emerald-600 px-4 py-3 font-semibold text-white hover:bg-emerald-700">
+            Search
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+
+        </div>
+      </details>
+    </div>
+
+  </nav>
+</header>
+<body id="top" class="m-0 min-h-screen flex flex-col overflow-x-hidden bg-[#F8FCFA]">
+<main class="flex-1">
+
+  <!-- Savings Hero Section -->
+  <section class="relative overflow-hidden bg-gradient-to-br from-[#F8FCFA] via-emerald-50 to-[#F1ECFF] py-16 sm:py-20 lg:py-24">
+    <div class="absolute -left-24 top-10 h-72 w-72 rounded-full bg-emerald-200/40 blur-3xl"></div>
+    <div class="absolute bottom-0 right-0 h-80 w-80 rounded-full bg-[#BFA7FF]/30 blur-3xl"></div>
+
+    <div class="relative mx-auto grid max-w-7xl items-center gap-12 px-4 sm:px-6 lg:grid-cols-[0.92fr_1.08fr] lg:px-8">
+
+      <!-- Hero Text -->
+      <div>
+        <p class="inline-flex rounded-full bg-white/90 px-5 py-2 text-sm font-semibold text-emerald-700 shadow-sm ring-1 ring-emerald-100">
+          TrustGrowth Savings
+        </p>
+
+        <h1 class="brand-font mt-6 max-w-3xl text-4xl font-bold leading-tight text-[#0B1F3A] sm:text-5xl lg:text-6xl">
+          Save Today, Secure Tomorrow
+        </h1>
+
+        <p class="mt-6 max-w-2xl text-base leading-8 text-gray-700 sm:text-lg">
+          Build steady savings for school fees, business goals, family plans, emergencies, and future investments with guidance from TrustGrowth.
+        </p>
+
+        <div class="mt-8 flex flex-col gap-4 sm:flex-row">
+          <a 
+            href="#savings-plans"
+            class="inline-flex items-center justify-center gap-3 rounded-full bg-emerald-600 px-7 py-4 text-sm font-semibold text-white shadow-lg transition hover:bg-emerald-700"
+          >
+            View Savings Plans
+            <i class="fa-solid fa-arrow-right text-xs"></i>
+          </a>
+
+          <a 
+            href="#goal-journey"
+            class="inline-flex items-center justify-center gap-3 rounded-full border border-[#0B1F3A]/20 bg-white px-7 py-4 text-sm font-semibold text-[#0B1F3A] shadow-sm transition hover:bg-[#0B1F3A] hover:text-white"
+          >
+            Start Your Goal
+            <i class="fa-solid fa-seedling text-xs"></i>
+          </a>
+        </div>
+      </div>
+
+ <!-- Hero Image -->
+<div class="relative">
+  <div class="absolute -left-4 top-8 hidden rounded-2xl bg-white px-5 py-4 shadow-lg ring-1 ring-gray-100 sm:block">
+    <p class="text-xs font-semibold text-gray-500">Savings Goal</p>
+    <p class="mt-1 text-xl font-bold text-[#0B1F3A]">Future Fund</p>
+  </div>
+
+  <div class="overflow-hidden rounded-[2rem] bg-white p-3 shadow-xl ring-1 ring-gray-100">
+    <img 
+      src="../images/savings-hero.png" 
+      alt="TrustGrowth advisor discussing a savings plan with a customer"
+      class="aspect-[4/3] w-full rounded-[1.5rem] object-contain object-center"
+    />
+  </div>
+
+  <a 
+    href="#savings-calculator"
+    class="absolute -bottom-5 left-4 hidden rounded-2xl bg-white px-5 py-4 text-[#0B1F3A] shadow-lg ring-1 ring-gray-100 transition hover:-translate-y-1 hover:border-emerald-400 hover:shadow-xl sm:block"
+  >
+    <p class="text-xs font-semibold text-emerald-700">
+      Savings Calculator
+    </p>
+
+    <p class="mt-1 text-lg font-bold">
+      Plan Monthly Savings
+    </p>
+  </a>
+
+  <div class="absolute -bottom-5 right-4 rounded-2xl bg-[#0B1F3A] px-5 py-4 text-white shadow-lg">
+    <p class="text-xs text-emerald-200">Savings Habit</p>
+    <p class="mt-1 text-lg font-bold">Small Steps</p>
+  </div>
+</div>
+</section>
+
+
+  <!-- Savings Goal Selector -->
+  <section id="goal-journey" class="bg-white py-16 sm:py-20">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+
+      <div class="mx-auto max-w-3xl text-center">
+        <p class="inline-flex rounded-full bg-emerald-100 px-4 py-2 text-sm font-semibold text-emerald-700">
+          Savings Goals
+        </p>
+
+        <h2 class="brand-font mt-5 text-3xl font-bold leading-tight text-[#0B1F3A] sm:text-4xl lg:text-5xl">
+          What Are You Saving For?
+        </h2>
+
+        <p class="mt-4 text-base leading-8 text-gray-600">
+          Choose a goal and build a savings habit around it. The clearer the goal, the easier it becomes to stay consistent.
+        </p>
+      </div>
+
+      <!-- Goal selector: soft connected tiles, not normal cards -->
+      <div class="mx-auto mt-12 grid max-w-5xl gap-5 md:grid-cols-2 lg:grid-cols-4">
+        
+        <a href="#regular-savings" class="group relative overflow-hidden rounded-[2rem] bg-[#F8FCFA] p-6 ring-1 ring-gray-100 transition hover:-translate-y-2 hover:bg-emerald-50 hover:shadow-lg">
+          <div class="absolute -right-8 -top-8 h-24 w-24 rounded-full bg-emerald-100"></div>
+          <span class="relative flex h-14 w-14 items-center justify-center rounded-2xl bg-emerald-600 text-xl text-white">
+            <i class="fa-solid fa-wallet"></i>
+          </span>
+          <h3 class="relative mt-5 text-xl font-bold text-[#0B1F3A]">Daily Needs</h3>
+          <p class="relative mt-3 text-sm leading-7 text-gray-600">
+            Save gradually for everyday expenses and routine plans.
+          </p>
+        </a>
+
+        <a href="#target-savings" class="group relative overflow-hidden rounded-[2rem] bg-[#F8FCFA] p-6 ring-1 ring-gray-100 transition hover:-translate-y-2 hover:bg-[#F1ECFF] hover:shadow-lg">
+          <div class="absolute -right-8 -top-8 h-24 w-24 rounded-full bg-[#F1ECFF]"></div>
+          <span class="relative flex h-14 w-14 items-center justify-center rounded-2xl bg-[#5B4B8A] text-xl text-white">
+            <i class="fa-solid fa-bullseye"></i>
+          </span>
+          <h3 class="relative mt-5 text-xl font-bold text-[#0B1F3A]">Target Goals</h3>
+          <p class="relative mt-3 text-sm leading-7 text-gray-600">
+            Save toward school fees, rent, travel, or big purchases.
+          </p>
+        </a>
+
+        <a href="#business-savings" class="group relative overflow-hidden rounded-[2rem] bg-[#F8FCFA] p-6 ring-1 ring-gray-100 transition hover:-translate-y-2 hover:bg-emerald-50 hover:shadow-lg">
+          <div class="absolute -right-8 -top-8 h-24 w-24 rounded-full bg-emerald-100"></div>
+          <span class="relative flex h-14 w-14 items-center justify-center rounded-2xl bg-emerald-600 text-xl text-white">
+            <i class="fa-solid fa-store"></i>
+          </span>
+          <h3 class="relative mt-5 text-xl font-bold text-[#0B1F3A]">Business Growth</h3>
+          <p class="relative mt-3 text-sm leading-7 text-gray-600">
+            Separate business savings from daily personal spending.
+          </p>
+        </a>
+
+        <a href="#future-fund" class="group relative overflow-hidden rounded-[2rem] bg-[#F8FCFA] p-6 ring-1 ring-gray-100 transition hover:-translate-y-2 hover:bg-[#F1ECFF] hover:shadow-lg">
+          <div class="absolute -right-8 -top-8 h-24 w-24 rounded-full bg-[#F1ECFF]"></div>
+          <span class="relative flex h-14 w-14 items-center justify-center rounded-2xl bg-[#5B4B8A] text-xl text-white">
+            <i class="fa-solid fa-seedling"></i>
+          </span>
+          <h3 class="relative mt-5 text-xl font-bold text-[#0B1F3A]">Future Fund</h3>
+          <p class="relative mt-3 text-sm leading-7 text-gray-600">
+            Build a stronger safety net for tomorrow’s needs.
+          </p>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Savings Plans Breakdown -->
+  <section id="savings-plans" class="bg-[#F8FCFA] py-16 sm:py-20">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+
+      <div class="mx-auto max-w-3xl text-center">
+        <p class="inline-flex rounded-full bg-[#F1ECFF] px-4 py-2 text-sm font-semibold text-[#5B4B8A]">
+          Savings Plans
+        </p>
+
+        <h2 class="brand-font mt-5 text-3xl font-bold leading-tight text-[#0B1F3A] sm:text-4xl lg:text-5xl">
+          Savings Plans Built Around Real Goals
+        </h2>
+
+        <p class="mt-4 text-base leading-8 text-gray-600">
+          Whether you save daily, monthly, or toward a specific goal, TrustGrowth helps you stay organized and consistent.
+        </p>
+      </div>
+
+      <!-- Unique savings layout: layered goal panels -->
+      <div class="mt-14 grid gap-8 lg:grid-cols-2">
+
+        <!-- Regular Savings -->
+        <article id="regular-savings" class="relative overflow-hidden rounded-[2.25rem] bg-white p-6 shadow-sm ring-1 ring-gray-100 sm:p-8">
+          <div class="absolute right-0 top-0 h-full w-28 bg-emerald-50"></div>
+          <div class="relative">
+            <div class="flex items-start gap-5 ">
+              <span class="flex h-16 w-16 shrink-0 items-center justify-center rounded-[1.35rem] bg-emerald-100 text-2xl text-emerald-700">
+                <i class="fa-solid fa-wallet"></i>
+              </span>
+
+              <div>
+                <p class="text-sm font-semibold text-emerald-700">01 Regular Savings</p>
+                <h3 class="brand-font mt-2 text-3xl font-bold text-[#0B1F3A]">
+                  Build a Steady Savings Habit
+                </h3>
+              </div>
+            </div>
+
+            <p class="mt-6 text-base leading-8 text-gray-600">
+              Ideal for customers who want to save consistently for everyday needs, household plans, and future responsibilities.
+            </p>
+
+            <div class="mt-6 grid gap-4 sm:grid-cols-2">
+              <div class="rounded-2xl bg-[#F8FCFA] p-5 border hover:border-emerald-400">
+                <p class="text-sm font-bold text-[#0B1F3A]">Best For</p>
+                <p class="mt-2 text-sm leading-6 text-gray-600">Individuals and families</p>
+              </div>
+
+              <div class="rounded-2xl bg-[#F8FCFA] p-5 border hover:border-emerald-400">
+                <p class="text-sm font-bold text-[#0B1F3A]">Saving Style</p>
+                <p class="mt-2 text-sm leading-6 text-gray-600">Daily, weekly, or monthly</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Target Savings -->
+        <article id="target-savings" class="relative overflow-hidden rounded-[2.25rem] bg-white p-6 shadow-sm ring-1 ring-gray-100 sm:p-8">
+          <div class="absolute right-0 top-0 h-full w-28 bg-[#F1ECFF]"></div>
+          <div class="relative">
+            <div class="flex items-start gap-5">
+              <span class="flex h-16 w-16 shrink-0 items-center justify-center rounded-[1.35rem] bg-[#F1ECFF] text-2xl text-[#5B4B8A]">
+                <i class="fa-solid fa-bullseye"></i>
+              </span>
+
+              <div>
+                <p class="text-sm font-semibold text-[#5B4B8A]">02 Target Savings</p>
+                <h3 class="brand-font mt-2 text-3xl font-bold text-[#0B1F3A]">
+                  Save Toward a Specific Goal
+                </h3>
+              </div>
+            </div>
+
+            <p class="mt-6 text-base leading-8 text-gray-600">
+              Perfect for school fees, rent, travel, equipment purchase, events, or any planned goal with a clear amount and timeline.
+            </p>
+
+            <div class="mt-6 grid gap-4 sm:grid-cols-2">
+              <div class="rounded-2xl bg-[#F8FCFA] p-5 border hover:border-[#5B4B8A]">
+                <p class="text-sm font-bold text-[#0B1F3A]">Best For</p>
+                <p class="mt-2 text-sm leading-6 text-gray-600">Planned financial goals</p>
+              </div>
+
+              <div class="rounded-2xl bg-[#F8FCFA] p-5 border hover:border-[#5B4B8A]">
+                <p class="text-sm font-bold text-[#0B1F3A]">Saving Style</p>
+                <p class="mt-2 text-sm leading-6 text-gray-600">Fixed goal and timeline</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Business Savings -->
+        <article id="business-savings" class="relative overflow-hidden rounded-[2.25rem] bg-white p-6 shadow-sm ring-1 ring-gray-100 sm:p-8">
+          <div class="absolute right-0 top-0 h-full w-28 bg-emerald-50"></div>
+          <div class="relative">
+            <div class="flex items-start gap-5">
+              <span class="flex h-16 w-16 shrink-0 items-center justify-center rounded-[1.35rem] bg-emerald-100 text-2xl text-emerald-700">
+                <i class="fa-solid fa-store"></i>
+              </span>
+
+              <div>
+                <p class="text-sm font-semibold text-emerald-700">03 Business Savings</p>
+                <h3 class="brand-font mt-2 text-3xl font-bold text-[#0B1F3A]">
+                  Keep Business Money Organized
+                </h3>
+              </div>
+            </div>
+
+            <p class="mt-6 text-base leading-8 text-gray-600">
+              Designed for traders, vendors, and SMEs who want to separate business cash flow from personal spending.
+            </p>
+
+            <div class="mt-6 grid gap-4 sm:grid-cols-2">
+              <div class="rounded-2xl bg-[#F8FCFA] p-5 border hover:border-emerald-400">
+                <p class="text-sm font-bold text-[#0B1F3A]">Best For</p>
+                <p class="mt-2 text-sm leading-6 text-gray-600">Traders and SMEs</p>
+              </div>
+
+              <div class="rounded-2xl bg-[#F8FCFA] p-5 border hover:border-emerald-400">
+                <p class="text-sm font-bold text-[#0B1F3A]">Saving Style</p>
+                <p class="mt-2 text-sm leading-6 text-gray-600">Business deposits and reserves</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Future Fund -->
+        <article id="future-fund" class="relative overflow-hidden rounded-[2.25rem] bg-white p-6 shadow-sm ring-1 ring-gray-100 sm:p-8">
+          <div class="absolute right-0 top-0 h-full w-28 bg-[#F1ECFF]"></div>
+          <div class="relative">
+            <div class="flex items-start gap-5">
+              <span class="flex h-16 w-16 shrink-0 items-center justify-center rounded-[1.35rem] bg-[#F1ECFF] text-2xl text-[#5B4B8A]">
+                <i class="fa-solid fa-seedling"></i>
+              </span>
+
+              <div>
+                <p class="text-sm font-semibold text-[#5B4B8A]">04 Future Fund</p>
+                <h3 class="brand-font mt-2 text-3xl font-bold text-[#0B1F3A]">
+                  Create a Safety Net Over Time
+                </h3>
+              </div>
+            </div>
+
+            <p class="mt-6 text-base leading-8 text-gray-600">
+              A steady plan for customers who want to prepare for emergencies, future opportunities, and long-term financial security.
+            </p>
+
+            <div class="mt-6 grid gap-4 sm:grid-cols-2">
+              <div class="rounded-2xl bg-[#F8FCFA] p-5 border hover:border-[#5B4B8A]">
+                <p class="text-sm font-bold text-[#0B1F3A]">Best For</p>
+                <p class="mt-2 text-sm leading-6 text-gray-600">Emergency and future plans</p>
+              </div>
+
+              <div class="rounded-2xl bg-[#F8FCFA] p-5 border hover:border-[#5B4B8A]">
+                <p class="text-sm font-bold text-[#0B1F3A]">Saving Style</p>
+                <p class="mt-2 text-sm leading-6 text-gray-600">Long-term consistent savings</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Savings Journey Section -->
+  <section class="bg-white py-16 sm:py-20">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+
+      <div class="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
+        <div>
+          <p class="inline-flex rounded-full bg-emerald-100 px-4 py-2 text-sm font-semibold text-emerald-700">
+            How Savings Works
+          </p>
+
+          <h2 class="brand-font mt-5 text-3xl font-bold leading-tight text-[#0B1F3A] sm:text-4xl">
+            Small Steps Can Grow Into Big Financial Wins
+          </h2>
+
+          <p class="mt-5 text-base leading-8 text-gray-600">
+            Savings works best when the journey is clear. TrustGrowth helps customers set a goal, choose a plan, save consistently, and review progress along the way.
+          </p>
+        </div>
+
+        <!-- Goal path design -->
+        <div class="relative rounded-[2.5rem] bg-[#F8FCFA] p-6 ring-1 ring-gray-100 sm:p-8">
+          <div class="absolute left-10 top-12 hidden h-[70%] w-px bg-emerald-200 md:block"></div>
+
+          <div class="space-y-7">
+
+            <div class="relative flex gap-5">
+              <span class="z-10 flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-emerald-600 font-bold text-white">
+                01
+              </span>
+              <div>
+                <h3 class="font-bold text-[#0B1F3A]">Set Your Goal</h3>
+                <p class="mt-2 text-sm leading-7 text-gray-600">
+                  Decide what you are saving for and how much you want to reach.
+                </p>
+              </div>
+            </div>
+
+            <div class="relative flex gap-5">
+              <span class="z-10 flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-[#5B4B8A] font-bold text-white">
+                02
+              </span>
+              <div>
+                <h3 class="font-bold text-[#0B1F3A]">Choose Your Plan</h3>
+                <p class="mt-2 text-sm leading-7 text-gray-600">
+                  Pick the savings style that matches your income and timeline.
+                </p>
+              </div>
+            </div>
+
+            <div class="relative flex gap-5">
+              <span class="z-10 flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-emerald-600 font-bold text-white">
+                03
+              </span>
+              <div>
+                <h3 class="font-bold text-[#0B1F3A]">Save Consistently</h3>
+                <p class="mt-2 text-sm leading-7 text-gray-600">
+                  Build the habit with regular deposits, no matter how small.
+                </p>
+              </div>
+            </div>
+
+            <div class="relative flex gap-5">
+              <span class="z-10 flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-[#5B4B8A] font-bold text-white">
+                04
+              </span>
+              <div>
+                <h3 class="font-bold text-[#0B1F3A]">Reach Your Goal</h3>
+                <p class="mt-2 text-sm leading-7 text-gray-600">
+                  Track progress and use your savings for the purpose you planned.
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- Savings Benefits -->
+  <section class="bg-[#F8FCFA] py-16 sm:py-20">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+
+      <div class="rounded-[2.5rem] bg-[#0B1F3A] p-6 text-white sm:p-8 lg:p-10">
+        <div class="grid gap-10 lg:grid-cols-[0.85fr_1.15fr] lg:items-center">
+
+          <div>
+            <p class="text-sm font-semibold text-emerald-300">
+              Savings Benefits
+            </p>
+
+            <h2 class="brand-font mt-4 text-3xl font-bold leading-tight sm:text-4xl">
+              Why Customers Save with TrustGrowth
+            </h2>
+
+            <p class="mt-5 text-base leading-8 text-white/75">
+              We make savings feel structured, purposeful, and easier to maintain with practical support and clear options.
+            </p>
+          </div>
+
+          <div class="grid gap-4 sm:grid-cols-2">
+            <div class="rounded-2xl bg-white/10 p-5">
+              <i class="fa-solid fa-shield-heart text-2xl text-emerald-300"></i>
+              <h3 class="mt-4 font-bold">Financial Discipline</h3>
+              <p class="mt-2 text-sm leading-6 text-white/70">Build a stronger habit of saving before spending.</p>
+            </div>
+
+            <div class="rounded-2xl bg-white/10 p-5">
+              <i class="fa-solid fa-bullseye text-2xl text-emerald-300"></i>
+              <h3 class="mt-4 font-bold">Goal Clarity</h3>
+              <p class="mt-2 text-sm leading-6 text-white/70">Stay focused on what each savings plan is meant for.</p>
+            </div>
+
+            <div class="rounded-2xl bg-white/10 p-5">
+              <i class="fa-solid fa-store text-2xl text-emerald-300"></i>
+              <h3 class="mt-4 font-bold">Business Control</h3>
+              <p class="mt-2 text-sm leading-6 text-white/70">Separate business cash from personal spending.</p>
+            </div>
+
+            <div class="rounded-2xl bg-white/10 p-5">
+              <i class="fa-solid fa-user-tie text-2xl text-emerald-300"></i>
+              <h3 class="mt-4 font-bold">Advisor Guidance</h3>
+              <p class="mt-2 text-sm leading-6 text-white/70">Get support in choosing the plan that fits your goal.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+ <!-- Functional Target Savings Calculator Section -->
+<section id="savings-calculator" class="scroll-mt-32 bg-white py-16 sm:py-20">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+
+    <div class="grid gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
+
+      <!-- Text + Inputs -->
+      <div>
+        <p class="inline-flex rounded-full bg-[#F1ECFF] px-4 py-2 text-sm font-semibold text-[#5B4B8A]">
+          Savings Calculator
+        </p>
+
+        <h2 class="brand-font mt-5 text-3xl font-bold leading-tight text-[#0B1F3A] sm:text-4xl">
+          Check How Much You Need to Save Monthly
+        </h2>
+
+        <p class="mt-5 text-base leading-8 text-gray-600">
+          Enter your savings goal, timeline, and amount already saved. The calculator will show how much you need to save each month.
+        </p>
+
+        <div class="mt-8 grid gap-5 sm:grid-cols-3">
+          <div>
+            <label for="goalAmount" class="text-sm font-semibold text-[#0B1F3A]">
+              Goal Amount
+            </label>
+            <input 
+              id="goalAmount"
+              type="number"
+              value="1000000"
+              min="0"
+              class="mt-2 w-full rounded-2xl border border-gray-200 bg-[#F8FCFA] px-4 py-4 text-sm outline-none focus:border-emerald-500 focus:ring-4 focus:ring-emerald-100"
+            />
+          </div>
+
+          <div>
+            <label for="timelineMonths" class="text-sm font-semibold text-[#0B1F3A]">
+              Timeline
+            </label>
+            <input 
+              id="timelineMonths"
+              type="number"
+              value="12"
+              min="1"
+              class="mt-2 w-full rounded-2xl border border-gray-200 bg-[#F8FCFA] px-4 py-4 text-sm outline-none focus:border-emerald-500 focus:ring-4 focus:ring-emerald-100"
+            />
+            <p class="mt-1 text-xs text-gray-500">In months</p>
+          </div>
+
+          <div>
+            <label for="savedAmount" class="text-sm font-semibold text-[#0B1F3A]">
+              Already Saved
+            </label>
+            <input 
+              id="savedAmount"
+              type="number"
+              value="650000"
+              min="0"
+              class="mt-2 w-full rounded-2xl border border-gray-200 bg-[#F8FCFA] px-4 py-4 text-sm outline-none focus:border-emerald-500 focus:ring-4 focus:ring-emerald-100"
+            />
+          </div>
+        </div>
+
+        <button 
+          id="calculateSavings"
+          type="button"
+          class="mt-7 inline-flex items-center justify-center gap-3 rounded-full bg-emerald-600 px-7 py-4 text-sm font-semibold text-white shadow-lg transition hover:bg-emerald-700"
+        >
+          Calculate Savings
+          <i class="fa-solid fa-calculator text-xs"></i>
+        </button>
+      </div>
+
+      <!-- Calculator Result Visual -->
+      <div class="rounded-[2.5rem] bg-gradient-to-br from-[#F8FCFA] via-white to-[#F1ECFF] p-6 shadow-sm ring-1 ring-gray-100 sm:p-8">
+        <div class="rounded-[2rem] bg-white p-6 shadow-lg ring-1 ring-gray-100">
+          
+          <div class="flex items-center justify-between gap-4">
+            <div>
+              <p class="text-sm font-semibold text-emerald-700">My Savings Goal</p>
+              <h3 class="brand-font mt-1 text-2xl font-bold text-[#0B1F3A]">
+                Future Fund
+              </h3>
+            </div>
+
+            <span class="flex h-14 w-14 items-center justify-center rounded-2xl bg-emerald-100 text-2xl text-emerald-700">
+              <i class="fa-solid fa-seedling"></i>
+            </span>
+          </div>
+
+          <div class="mt-8 space-y-5">
+            <div>
+              <div class="flex justify-between text-sm font-semibold text-gray-600">
+                <span>Progress</span>
+                <span id="progressText">65%</span>
+              </div>
+
+              <div class="mt-2 h-3 overflow-hidden rounded-full bg-gray-100">
+                <div 
+                  id="progressBar"
+                  class="h-full w-[65%] rounded-full bg-emerald-600 transition-all duration-500">
+                </div>
+              </div>
+            </div>
+
+            <div class="grid gap-4 sm:grid-cols-2">
+              <div class="rounded-2xl bg-[#F8FCFA] p-4">
+                <p class="text-xs font-semibold text-gray-500">Saved So Far</p>
+                <p id="savedResult" class="mt-1 text-xl font-bold text-[#0B1F3A]">₦650,000</p>
+              </div>
+
+              <div class="rounded-2xl bg-[#F8FCFA] p-4">
+                <p class="text-xs font-semibold text-gray-500">Remaining</p>
+                <p id="remainingResult" class="mt-1 text-xl font-bold text-[#5B4B8A]">₦350,000</p>
+              </div>
+            </div>
+
+            <div class="rounded-2xl bg-emerald-50 p-5">
+              <p class="text-sm font-semibold text-emerald-800">
+                Monthly Savings Needed
+              </p>
+              <p id="monthlyResult" class="mt-2 text-3xl font-bold text-emerald-700">
+                ₦29,167
+              </p>
+              <p id="calculatorNote" class="mt-3 text-sm leading-7 text-emerald-800">
+                Keep saving consistently. Small monthly steps can make large goals feel more achievable.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- Savings FAQs -->
+  <section class="bg-[#F8FCFA] py-16 sm:py-20">
+    <div class="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
+
+      <div class="mx-auto max-w-3xl text-center">
+        <p class="inline-flex rounded-full bg-emerald-100 px-4 py-2 text-sm font-semibold text-emerald-700">
+          Savings Questions
+        </p>
+
+        <h2 class="brand-font mt-5 text-3xl font-bold text-[#0B1F3A] sm:text-4xl">
+          Common Savings Questions
+        </h2>
+      </div>
+
+      <div class="mt-10 space-y-4">
+        <details class="group rounded-2xl bg-white p-5 shadow-sm ring-1 ring-gray-100">
+          <summary class="flex cursor-pointer list-none items-center justify-between gap-4 font-bold text-[#0B1F3A]">
+            Can I save daily, weekly, or monthly?
+            <i class="fa-solid fa-plus shrink-0 text-emerald-600 transition group-open:rotate-45"></i>
+          </summary>
+          <p class="mt-4 text-sm leading-7 text-gray-600">
+            Yes. Customers can choose a saving rhythm that matches their income flow and goal timeline.
+          </p>
+        </details>
+
+        <details class="group rounded-2xl bg-white p-5 shadow-sm ring-1 ring-gray-100">
+          <summary class="flex cursor-pointer list-none items-center justify-between gap-4 font-bold text-[#0B1F3A]">
+            Can traders open a business savings plan?
+            <i class="fa-solid fa-plus shrink-0 text-emerald-600 transition group-open:rotate-45"></i>
+          </summary>
+          <p class="mt-4 text-sm leading-7 text-gray-600">
+            Yes. Business savings can help traders and SMEs separate business money from personal spending.
+          </p>
+        </details>
+
+        <details class="group rounded-2xl bg-white p-5 shadow-sm ring-1 ring-gray-100">
+          <summary class="flex cursor-pointer list-none items-center justify-between gap-4 font-bold text-[#0B1F3A]">
+            Can I save toward a specific target?
+            <i class="fa-solid fa-plus shrink-0 text-emerald-600 transition group-open:rotate-45"></i>
+          </summary>
+          <p class="mt-4 text-sm leading-7 text-gray-600">
+            Yes. Target savings are useful for school fees, rent, equipment, family plans, and other planned goals.
+          </p>
+        </details>
+
+        <details class="group rounded-2xl bg-white p-5 shadow-sm ring-1 ring-gray-100">
+          <summary class="flex cursor-pointer list-none items-center justify-between gap-4 font-bold text-[#0B1F3A]">
+            Can I speak to someone before choosing a plan?
+            <i class="fa-solid fa-plus shrink-0 text-emerald-600 transition group-open:rotate-45"></i>
+          </summary>
+          <p class="mt-4 text-sm leading-7 text-gray-600">
+            Yes. A TrustGrowth advisor can help you choose the savings plan that fits your income and goal.
+          </p>
+        </details>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- Final CTA: Savings Envelope Style -->
+  <section class="bg-white py-16 sm:py-20">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+
+      <div class="relative overflow-hidden rounded-[2.5rem] bg-gradient-to-br from-emerald-50 via-white to-[#F1ECFF] p-6 shadow-sm ring-1 ring-gray-100 sm:p-8 lg:p-10">
+        <div class="absolute -right-16 -top-16 h-44 w-44 rounded-full bg-emerald-200/50 blur-2xl"></div>
+        <div class="absolute -bottom-16 -left-16 h-44 w-44 rounded-full bg-[#BFA7FF]/40 blur-2xl"></div>
+
+        <div class="relative grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
+
+          <!-- Envelope Visual -->
+          <div class="mx-auto w-full max-w-md">
+            <div class="relative rounded-[2rem] bg-white p-6 shadow-xl ring-1 ring-gray-100">
+              <div class="rounded-[1.5rem] bg-[#F8FCFA] p-6">
+                <div class="flex items-center justify-between">
+                  <p class="text-sm font-bold text-[#0B1F3A]">My Goal Envelope</p>
+                  <span class="rounded-full bg-emerald-100 px-3 py-1 text-xs font-bold text-emerald-700">
+                    Active
+                  </span>
+                </div>
+
+                <div class="mt-8 rounded-[1.5rem] border-2 border-dashed border-emerald-200 bg-white p-6 text-center">
+                  <i class="fa-solid fa-envelope-open-text text-4xl text-emerald-600"></i>
+                  <h3 class="brand-font mt-4 text-2xl font-bold text-[#0B1F3A]">
+                    Future Fund
+                  </h3>
+                  <p class="mt-2 text-sm leading-6 text-gray-600">
+                    Keep building your goal one deposit at a time.
+                  </p>
+                </div>
+
+                <div class="mt-6 flex items-center justify-between rounded-2xl bg-white p-4">
+                  <span class="text-sm font-semibold text-gray-500">Next Deposit</span>
+                  <span class="text-lg font-bold text-emerald-700">₦25,000</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CTA Text -->
+          <div>
+            <p class="inline-flex rounded-full bg-emerald-100 px-4 py-2 text-sm font-semibold text-emerald-700">
+              Ready to Start Saving?
+            </p>
+
+            <h2 class="brand-font mt-5 text-3xl font-bold leading-tight text-[#0B1F3A] sm:text-4xl lg:text-5xl">
+              Open a Savings Plan That Matches Your Goal
+            </h2>
+
+            <p class="mt-5 max-w-2xl text-base leading-8 text-gray-600">
+              Start with a clear goal, choose a plan, and let TrustGrowth help you build a savings habit with confidence.
+            </p>
+
+            <div class="mt-8 flex flex-col gap-4 sm:flex-row">
+              <a 
+                href="contact.html"
+                class="inline-flex items-center justify-center gap-3 rounded-full bg-emerald-600 px-7 py-4 text-sm font-semibold text-white shadow-lg transition hover:bg-emerald-700"
+              >
+                Start Saving
+                <i class="fa-solid fa-arrow-right text-xs"></i>
+              </a>
+
+              <a 
+                href="contact.html"
+                class="inline-flex items-center justify-center gap-3 rounded-full border border-[#0B1F3A]/20 bg-white px-7 py-4 text-sm font-semibold text-[#0B1F3A] shadow-sm transition hover:bg-[#0B1F3A] hover:text-white"
+              >
+                Speak to Advisor
+                <i class="fa-solid fa-phone text-xs"></i>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<!-- Footer Section -->
+<footer class="bg-[#0B1F3A] text-white">
+  <div class="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+
+    <!-- Footer Top -->
+    <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
+
+      <!-- Brand Area -->
+      <div>
+        <a href="index.html" class="flex items-center gap-3">
+          <img 
+            src="../images/trustgrowthlogo2.png" 
+            alt="TrustGrowth Microfinance Logo"
+            class="h-12 w-12 rounded-full bg-white object-cover p-1"
+          />
+
+          <div>
+            <h2 class="brand-font text-2xl font-bold text-white">
+              TrustGrowth
+            </h2>
+            <p class="text-sm font-medium tracking-wide text-emerald-300">
+              Microfinance
+            </p>
+          </div>
+        </a>
+
+        <p class="mt-5 max-w-sm text-sm leading-7 text-gray-300">
+          Helping individuals, traders, families, and small businesses access simple loans, secure savings, and practical financial support.
+        </p>
+
+        <!-- Social Icons -->
+        <div class="mt-6 flex items-center gap-3">
+          <a 
+            href="#" 
+            aria-label="Facebook"
+            class="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white transition hover:bg-emerald-500"
+          >
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+
+          <a 
+            href="#" 
+            aria-label="Instagram"
+            class="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white transition hover:bg-emerald-500"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+
+          <a 
+            href="#" 
+            aria-label="LinkedIn"
+            class="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white transition hover:bg-emerald-500"
+          >
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+
+          <a 
+            href="#" 
+            aria-label="WhatsApp"
+            class="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white transition hover:bg-emerald-500"
+          >
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+
+          <a 
+            href="#" 
+            aria-label="X Twitter"
+            class="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white transition hover:bg-emerald-500"
+          >
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div>
+        <h3 class="text-lg font-bold text-white">
+          Quick Links
+        </h3>
+
+        <ul class="mt-5 space-y-3 text-sm text-gray-300">
+          <li>
+            <a href="index.html" class="transition hover:text-emerald-300">
+              Home
+            </a>
+          </li>
+
+          <li>
+            <a href="about.html" class="transition hover:text-emerald-300">
+              About Us
+            </a>
+          </li>
+
+          <li>
+            <a href="services.html" class="transition hover:text-emerald-300">
+              Services
+            </a>
+          </li>
+
+          <li>
+            <a href="loans.html" class="transition hover:text-emerald-300">
+              Loans
+            </a>
+          </li>
+
+          <li>
+            <a href="savings.html" class="transition hover:text-emerald-300">
+              Savings
+            </a>
+          </li>
+
+          <li>
+            <a href="faqs.html" class="transition hover:text-emerald-300">
+              FAQs
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Services -->
+      <div>
+        <h3 class="text-lg font-bold text-white">
+          Our Services
+        </h3>
+
+        <ul class="mt-5 space-y-3 text-sm text-gray-300">
+          <li>
+            <a href="loans.html#personal-loans" class="transition hover:text-emerald-300">
+              Personal Loans
+            </a>
+          </li>
+
+          <li>
+            <a href="loans.html#business-loans" class="transition hover:text-emerald-300">
+              Business Loans
+            </a>
+          </li>
+
+          <li>
+            <a href="savings.html#regular" class="transition hover:text-emerald-300">
+              Regular Savings
+            </a>
+          </li>
+
+          <li>
+            <a href="savings.html#business" class="transition hover:text-emerald-300">
+              Business Savings
+            </a>
+          </li>
+
+          <li>
+            <a href="services.html#advisory" class="transition hover:text-emerald-300">
+              Financial Advisory
+            </a>
+          </li>
+
+          <li>
+            <a href="services.html#sme-support" class="transition hover:text-emerald-300">
+              SME Support
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div>
+        <h3 class="text-lg font-bold text-white">
+          Contact Us
+        </h3>
+
+        <ul class="mt-5 space-y-4 text-sm text-gray-300">
+
+          <li class="flex items-start gap-3">
+            <span class="mt-1 text-emerald-300">
+              <i class="fa-solid fa-location-dot"></i>
+            </span>
+            <span>
+              25 Growth Avenue, Victoria Island, Lagos, Nigeria
+            </span>
+          </li>
+
+          <li class="flex items-start gap-3">
+            <span class="mt-1 text-emerald-300">
+              <i class="fa-solid fa-phone"></i>
+            </span>
+            <a href="tel:+2348000000000" class="transition hover:text-emerald-300">
+              +234 800 000 0000
+            </a>
+          </li>
+
+          <li class="flex items-start gap-3">
+            <span class="mt-1 text-emerald-300">
+              <i class="fa-solid fa-envelope"></i>
+            </span>
+            <a href="mailto:info@trustgrowthmfb.com" class="transition hover:text-emerald-300">
+              info@trustgrowthmfb.com
+            </a>
+          </li>
+
+          <li class="flex items-start gap-3">
+            <span class="mt-1 text-emerald-300">
+              <i class="fa-solid fa-clock"></i>
+            </span>
+            <span>
+              Mon to Fri: 8:00am to 5:00pm
+            </span>
+          </li>
+
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="mt-10 border-t border-white/10 pt-6">
+      <div class="flex flex-col items-center justify-between gap-5 md:flex-row">
+
+        <p class="text-center text-sm text-gray-400 md:text-left">
+          © 2026 TrustGrowth Microfinance. All rights reserved.
+        </p>
+
+        <div class="flex flex-wrap items-center justify-center gap-5 text-sm text-gray-400">
+          <a href="#" class="transition hover:text-emerald-300">
+            Privacy Policy
+          </a>
+
+          <a href="#" class="transition hover:text-emerald-300">
+            Terms of Use
+          </a>
+
+          <a 
+            href="#top"
+            class="inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-2 text-white transition hover:bg-emerald-500"
+          >
+            Back to Top
+            <i class="fa-solid fa-arrow-up text-xs"></i>
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</footer>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const goalAmount = document.getElementById("goalAmount");
+    const timelineMonths = document.getElementById("timelineMonths");
+    const savedAmount = document.getElementById("savedAmount");
+    const calculateSavings = document.getElementById("calculateSavings");
+
+    const progressText = document.getElementById("progressText");
+    const progressBar = document.getElementById("progressBar");
+    const savedResult = document.getElementById("savedResult");
+    const remainingResult = document.getElementById("remainingResult");
+    const monthlyResult = document.getElementById("monthlyResult");
+    const calculatorNote = document.getElementById("calculatorNote");
+
+    if (
+      !goalAmount ||
+      !timelineMonths ||
+      !savedAmount ||
+      !calculateSavings ||
+      !progressText ||
+      !progressBar ||
+      !savedResult ||
+      !remainingResult ||
+      !monthlyResult ||
+      !calculatorNote
+    ) {
+      console.log("Savings calculator: one or more required IDs are missing.");
+      return;
+    }
+
+    function formatNaira(amount) {
+      return "₦" + Number(amount).toLocaleString("en-NG", {
+        maximumFractionDigits: 0
+      });
+    }
+
+    function updateSavingsCalculator() {
+      const goal = Number(goalAmount.value);
+      const months = Number(timelineMonths.value);
+      const saved = Number(savedAmount.value);
+
+      if (goal <= 0 || months <= 0 || saved < 0) {
+        calculatorNote.textContent =
+          "Please enter a valid goal amount, timeline, and saved amount.";
+        return;
+      }
+
+      const remaining = Math.max(goal - saved, 0);
+      const monthlyNeeded = remaining / months;
+      const progress = Math.min((saved / goal) * 100, 100);
+
+      progressText.textContent = Math.round(progress) + "%";
+      progressBar.style.width = progress + "%";
+
+      savedResult.textContent = formatNaira(saved);
+      remainingResult.textContent = formatNaira(remaining);
+      monthlyResult.textContent = formatNaira(monthlyNeeded);
+
+      if (remaining === 0) {
+        calculatorNote.textContent =
+          "Congratulations. You have already reached your savings goal.";
+      } else {
+        calculatorNote.textContent =
+          "To reach your goal, save about " +
+          formatNaira(monthlyNeeded) +
+          " every month.";
+      }
+    }
+
+    calculateSavings.addEventListener("click", updateSavingsCalculator);
+
+    goalAmount.addEventListener("input", updateSavingsCalculator);
+    timelineMonths.addEventListener("input", updateSavingsCalculator);
+    savedAmount.addEventListener("input", updateSavingsCalculator);
+
+    updateSavingsCalculator();
+  });
+</script>
+</body>
+
+</html>
